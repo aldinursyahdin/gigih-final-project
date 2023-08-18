@@ -18,7 +18,7 @@ import {
 import { useLoaderData, Link, useNavigate } from "react-router-dom"
 import axios from 'axios'
 import { useEffect, useState } from "react";
-const URL = "https:gigihmidterm-production.up.railway.app/video";
+const URL = "https://gigihmidterm-production.up.railway.app/video";
 
 
 export default function Dashboard() {

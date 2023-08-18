@@ -4,7 +4,7 @@ import { Grid, GridItem, AspectRatio, SimpleGrid, Center, Box, AbsoluteCenter, F
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Form, Outlet, useNavigate, useParams } from 'react-router-dom'
-const URL = "https:gigihmidterm-production.up.railway.app/video";
+const URL = "https://gigihmidterm-production.up.railway.app/video";
 
 
 
@@ -24,7 +24,7 @@ export default function VideoDetail() {
 
   const fetchVideo = async () => {
 
-    return await axios.get(`https:gigihmidterm-production.up.railway.app/video/${id}`).then((res) => res.data);
+    return await axios.get(`https://gigihmidterm-production.up.railway.app/video/${id}`).then((res) => res.data);
   };
   useEffect(() => {
     fetchVideo().then((data) => setVideo(data));
@@ -33,7 +33,7 @@ export default function VideoDetail() {
 
   const fetchProducts = async () => {
 
-    return await axios.get(`https:gigihmidterm-production.up.railway.app/video/product/${id}`).then((res) => res.data);
+    return await axios.get(`https://gigihmidterm-production.up.railway.app/video/product/${id}`).then((res) => res.data);
   };
   useEffect(() => {
     fetchProducts().then((data) => setProducts(data));
@@ -42,7 +42,7 @@ export default function VideoDetail() {
 
   const fetchComments = async () => {
 
-    return await axios.get(`https:gigihmidterm-production.up.railway.app/video/comment/${id}`).then((res) => res.data);
+    return await axios.get(`https://gigihmidterm-production.up.railway.app/video/comment/${id}`).then((res) => res.data);
   };
   useEffect(() => {
     fetchComments().then((data) => setComments(data));
