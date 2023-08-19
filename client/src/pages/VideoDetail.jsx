@@ -101,12 +101,12 @@ export default function VideoDetail() {
 
               {products && products.map((product, i) => (
                 <Box key={product._id}>
-                  <Heading size='xs' textTransform='uppercase'>
+                  <Heading size='xs' textTransform='uppercase' color={'white'}>
                     {product.Title}                 <Link href={product.LinkProduct} isExternal>
                       <ExternalLinkIcon mx='2px' />
                     </Link>
                   </Heading>
-                  <Text pt='2' fontSize='sm'>
+                  <Text pt='2' fontSize='sm' color={'white'}>
                     Rp. {product.Price}
                   </Text>
 
@@ -135,14 +135,14 @@ export default function VideoDetail() {
         </Flex>
 
         <Flex>
-          <Heading as='h1' pl="30px" mt="-10">
+          <Heading as='h1' pl="30px" mt="-10" color={'white'}>
             {video && video.Title}
           </Heading>
 
         </Flex>
 
         <Flex>
-          <Text pl="30px" >
+          <Text pl="30px" color={'white'}>
             {video && video.Username}
           </Text>
         </Flex>
@@ -152,7 +152,7 @@ export default function VideoDetail() {
       <GridItem area={'comments'} h="100%" bg="rgb(26, 32, 44)">
         <Card bg="rgba(255, 255, 255, 0)" >
           <CardHeader>
-            <Heading size='md'>Comments</Heading>
+            <Heading color={'white'} size='md'>Comments</Heading>
           </CardHeader>
 
           <CardBody>
@@ -162,10 +162,10 @@ export default function VideoDetail() {
 
               {comments && comments.map((comment) => (
                 <Box key={comment._id}>
-                  <Text pt='2' fontSize='10px' fontWeight={'bold'} >
+                  <Text pt='2' fontSize='10px' fontWeight={'bold'} color={'white'}>
                     {comment.Username}
                   </Text>
-                  <Text size='xs' >
+                  <Text size='xs' color={'white'} >
                     {comment.Comment}
                   </Text>
 
@@ -185,21 +185,21 @@ export default function VideoDetail() {
       <GridItem area={'form'} bg="rgb(26, 32, 44)"  >
         <Box maxW="480px">
           <Form method="post" action="/create" onSubmit={handleSubmit}>
-            <FormControl isRequired mb="10px" value={inputs.username}
+            <FormControl isRequired mb="10px" value={inputs.username} color={'white'}
               onChange={handleChange}>
-              <FormLabel>Username:</FormLabel>
-              <Input type="text" name="Username" placeholder="Enter a username" />
+              <FormLabel color={'white'}>Username:</FormLabel>
+              <Input color={'white'} type="text" name="Username" placeholder="Enter a username" />
 
             </FormControl>
 
             <FormControl isRequired mb="10px" value={inputs.Comment}
               onChange={handleChange}>
-              <FormLabel>Comment:</FormLabel>
+              <FormLabel color={'white'}>Comment:</FormLabel>
               <Textarea
 
                 placeholder="Enter a Comment"
                 name="Comment"
-
+                color={'white'}
               />
             </FormControl>
 
