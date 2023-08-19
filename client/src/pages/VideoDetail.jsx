@@ -88,8 +88,8 @@ export default function VideoDetail() {
 
 
 
-      <GridItem area={'product'} h="100%" >
-        <Card bg="rgba(255, 255, 255, 0)">
+      <GridItem area={'product'} h="100%" bg="rgb(26, 32, 44)">
+        <Card bg="rgb(26, 32, 44)">
           <CardHeader>
             <Heading size='md'>Product</Heading>
           </CardHeader>
@@ -124,7 +124,7 @@ export default function VideoDetail() {
         </Card>
       </GridItem>
 
-      <GridItem area={'videos'} h="100%"  >
+      <GridItem area={'videos'} h="100%" bg="rgb(26, 32, 44)" >
 
         <Flex p="30px" mb="30px" alignItems="center">
           <AspectRatio w='900px' ratio={2} >
@@ -149,7 +149,7 @@ export default function VideoDetail() {
 
       </GridItem>
 
-      <GridItem area={'comments'} h="100%" bg="rgba(255, 255, 255, 0)">
+      <GridItem area={'comments'} h="100%" bg="rgb(26, 32, 44)">
         <Card bg="rgba(255, 255, 255, 0)" >
           <CardHeader>
             <Heading size='md'>Comments</Heading>
@@ -182,7 +182,7 @@ export default function VideoDetail() {
           </CardFooter>
         </Card>
       </GridItem>
-      <GridItem area={'form'}  >
+      <GridItem area={'form'} bg="rgb(26, 32, 44)"  >
         <Box maxW="480px">
           <Form method="post" action="/create" onSubmit={handleSubmit}>
             <FormControl isRequired mb="10px" value={inputs.username}

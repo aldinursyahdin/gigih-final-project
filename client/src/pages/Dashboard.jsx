@@ -39,7 +39,7 @@ export default function Dashboard() {
 
 
     return (
-        <SimpleGrid spacing={2} minChildWidth={220} bg="rgba(255, 255, 255, 0)" paddingBottom={10}>
+        <SimpleGrid spacing={2} minChildWidth={220} bg="rgb(26, 32, 44)" paddingBottom={10}>
             {videos && videos.map(video => (
                 
 
