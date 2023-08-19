@@ -53,6 +53,10 @@ Comment: String
 VideoId: Video_id from object video
 }
 ```
+**Link Deployment for the Backend**
+----
+https://gigihmidterm-production.up.railway.app/
+----
 
 **GET /video**
 ----
