@@ -91,7 +91,7 @@ export default function VideoDetail() {
       <GridItem area={'product'} h="100%" bg="rgb(26, 32, 44)">
         <Card bg="rgb(26, 32, 44)">
           <CardHeader>
-            <Heading size='md'>Product</Heading>
+            <Heading size='md' color={'white'}>Product</Heading>
           </CardHeader>
 
           <CardBody>
