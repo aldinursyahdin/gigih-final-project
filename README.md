@@ -1,11 +1,30 @@
 # GIGIH Final Project
+This is a Tokopedia Play Clone for my GIGIH final project
 
+**Features**
+----
+* User can see video list with thumbnail from YouTube in home page
+* User can click each video and go to video detail page
+* User can see list products, embed YouTube, list comment, and form submit comment
+* User just need input name and comment when submit comment in form
+* User can see their comment in list comment section after success submit comment
+
+**How to Run the Frontend**
+----
+```
+npm install
+npm run dev
+```
+
+
+**How to Run the Backend**
+----
 ```
 npm install
 change env-example to .env according to your environment
 npm run start
 ```
-
+# Object
 * Video object
 ```
 {
